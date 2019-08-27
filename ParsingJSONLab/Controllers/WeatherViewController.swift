@@ -36,6 +36,11 @@ class WeatherViewController: UIViewController {
             print(error)
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DetailWeatherViewController, let indexPath = weatherTableView.indexPathForSelectedRow else {return}
+        destination.weather = weathers[indexPath.row]
+    }
 }
 
 extension WeatherViewController: UITableViewDataSource {
