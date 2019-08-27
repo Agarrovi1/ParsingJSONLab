@@ -19,6 +19,7 @@
 		4D9D9BA92315B08E004CF6F9 /* colorscheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9BA82315B08E004CF6F9 /* colorscheme.json */; };
 		4D9D9BAB2315B0E3004CF6F9 /* randomuser.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9BAA2315B0E3004CF6F9 /* randomuser.json */; };
 		4D9D9BAD2315B0F1004CF6F9 /* weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D9D9BAC2315B0F0004CF6F9 /* weather.json */; };
+		4D9D9BAF2315B36F004CF6F9 /* ColorDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9BAE2315B36F004CF6F9 /* ColorDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4D9D9BA82315B08E004CF6F9 /* colorscheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colorscheme.json; sourceTree = "<group>"; };
 		4D9D9BAA2315B0E3004CF6F9 /* randomuser.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomuser.json; sourceTree = "<group>"; };
 		4D9D9BAC2315B0F0004CF6F9 /* weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weather.json; sourceTree = "<group>"; };
+		4D9D9BAE2315B36F004CF6F9 /* ColorDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDecoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		4D9D9BA32315AA3E004CF6F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4D9D9BAE2315B36F004CF6F9 /* ColorDecoder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				4D9D9B752315A905004CF6F9 /* WeatherViewController.swift in Sources */,
 				4D9D9BA72315AFA8004CF6F9 /* UserViewController.swift in Sources */,
+				4D9D9BAF2315B36F004CF6F9 /* ColorDecoder.swift in Sources */,
 				4D9D9BA52315AF97004CF6F9 /* ColorViewController.swift in Sources */,
 				4D9D9B732315A905004CF6F9 /* AppDelegate.swift in Sources */,
 			);
