@@ -97,11 +97,11 @@
 		4D9D9B712315A905004CF6F9 /* ParsingJSONLab */ = {
 			isa = PBXGroup;
 			children = (
-				4D9D9B722315A905004CF6F9 /* AppDelegate.swift */,
-				4D9D9B742315A905004CF6F9 /* ViewController.swift */,
+				4D9D9BA12315A9FE004CF6F9 /* Supporting Files */,
+				4D9D9BA22315AA28004CF6F9 /* Controllers */,
+				4D9D9BA32315AA3E004CF6F9 /* Models */,
 				4D9D9B762315A905004CF6F9 /* Main.storyboard */,
 				4D9D9B792315A907004CF6F9 /* Assets.xcassets */,
-				4D9D9B7B2315A907004CF6F9 /* LaunchScreen.storyboard */,
 				4D9D9B7E2315A907004CF6F9 /* Info.plist */,
 			);
 			path = ParsingJSONLab;
@@ -123,6 +123,30 @@
 				4D9D9B942315A907004CF6F9 /* Info.plist */,
 			);
 			path = ParsingJSONLabUITests;
+			sourceTree = "<group>";
+		};
+		4D9D9BA12315A9FE004CF6F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D9D9B722315A905004CF6F9 /* AppDelegate.swift */,
+				4D9D9B7B2315A907004CF6F9 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D9D9BA22315AA28004CF6F9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D9D9B742315A905004CF6F9 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4D9D9BA32315AA3E004CF6F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
