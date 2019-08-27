@@ -22,6 +22,7 @@
 		4D9D9BAF2315B36F004CF6F9 /* ColorDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9BAE2315B36F004CF6F9 /* ColorDecoder.swift */; };
 		4D9D9BB12315C333004CF6F9 /* DetailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9BB02315C333004CF6F9 /* DetailColorViewController.swift */; };
 		4D9D9BB32315C85C004CF6F9 /* UserDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9BB22315C85C004CF6F9 /* UserDecoder.swift */; };
+		4D9D9BB52315CF09004CF6F9 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9D9BB42315CF09004CF6F9 /* DetailUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4D9D9BAE2315B36F004CF6F9 /* ColorDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDecoder.swift; sourceTree = "<group>"; };
 		4D9D9BB02315C333004CF6F9 /* DetailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColorViewController.swift; sourceTree = "<group>"; };
 		4D9D9BB22315C85C004CF6F9 /* UserDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDecoder.swift; sourceTree = "<group>"; };
+		4D9D9BB42315CF09004CF6F9 /* DetailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				4D9D9BA42315AF97004CF6F9 /* ColorViewController.swift */,
 				4D9D9BB02315C333004CF6F9 /* DetailColorViewController.swift */,
 				4D9D9BA62315AFA8004CF6F9 /* UserViewController.swift */,
+				4D9D9BB42315CF09004CF6F9 /* DetailUserViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 			files = (
 				4D9D9BB32315C85C004CF6F9 /* UserDecoder.swift in Sources */,
 				4D9D9B752315A905004CF6F9 /* WeatherViewController.swift in Sources */,
+				4D9D9BB52315CF09004CF6F9 /* DetailUserViewController.swift in Sources */,
 				4D9D9BA72315AFA8004CF6F9 /* UserViewController.swift in Sources */,
 				4D9D9BAF2315B36F004CF6F9 /* ColorDecoder.swift in Sources */,
 				4D9D9BA52315AF97004CF6F9 /* ColorViewController.swift in Sources */,
