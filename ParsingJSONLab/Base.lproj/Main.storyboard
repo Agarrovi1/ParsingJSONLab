@@ -77,11 +77,11 @@
             </objects>
             <point key="canvasLocation" x="-404" y="-19"/>
         </scene>
-        <!--Item 1-->
+        <!--Color-->
         <scene sceneID="EYk-qI-eJS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bcl-mp-MAm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="zOj-kE-oD8"/>
+                    <tabBarItem key="tabBarItem" title="Color" id="zOj-kE-oD8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dyc-Cd-GMU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -96,11 +96,11 @@
             </objects>
             <point key="canvasLocation" x="573.91304347826087" y="-344.19642857142856"/>
         </scene>
-        <!--Item 2-->
+        <!--User-->
         <scene sceneID="bNc-HA-Cvw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8G3-rb-rN1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Z95-bS-80i"/>
+                    <tabBarItem key="tabBarItem" title="User" id="Z95-bS-80i"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PqN-ue-WpF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -115,11 +115,11 @@
             </objects>
             <point key="canvasLocation" x="573.91304347826087" y="303.34821428571428"/>
         </scene>
-        <!--Item-->
+        <!--Weather-->
         <scene sceneID="ZnE-vQ-xfg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J7q-aP-8cW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gda-0v-rVT"/>
+                    <tabBarItem key="tabBarItem" title="Weather" id="gda-0v-rVT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ttO-9a-A4i">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
