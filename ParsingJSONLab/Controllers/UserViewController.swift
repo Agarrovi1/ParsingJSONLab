@@ -10,21 +10,46 @@ import UIKit
 
 class UserViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var userTableView: UITableView!
+    var users = [User]() {
+        didSet {
+            userTableView.reloadData()
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        userTableView.dataSource = self
+        loadData()
+        // Do any additional setup after loading the view.
     }
-    */
+    private func loadData() {
+        guard let pathToUserJSON = Bundle.main.path(forResource: "randomuser", ofType: "json") else {
+            return print("guard of loadData() for users didn't work")
+        }
+        let url = URL(fileURLWithPath: pathToUserJSON)
+        do {
+            let data = try Data(contentsOf: url)
+            let usersFromJSON = try User.getUsers(from: data)
+            users = usersFromJSON
+        } catch {
+            print(error)
+        }
+    }
+}
 
+extension UserViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return users.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = userTableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        let theUser = users[indexPath.row]
+        cell.textLabel?.text = theUser.getFullName()
+        cell.detailTextLabel?.text = theUser.email
+        return cell
+    }
+    
+    
 }

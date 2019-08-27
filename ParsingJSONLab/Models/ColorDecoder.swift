@@ -13,8 +13,6 @@ enum JSONError: Error {
     case decodingError(Error)
 }
 
-
-
 struct Colour: Codable {
     let name: Name
     let hex: Hex
