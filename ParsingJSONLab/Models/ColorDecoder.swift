@@ -7,12 +7,18 @@
 //
 
 import Foundation
+import UIKit
+
 enum JSONError: Error {
     case decodingError(Error)
 }
 
+
+
 struct Colour: Codable {
-    let rbg: RBG
+    let name: Name
+    let hex: Hex
+    let rgb: RGB
     
     static func getColors(from data:Data) throws -> [Colour] {
         do {
@@ -21,11 +27,21 @@ struct Colour: Codable {
         } catch {
            throw JSONError.decodingError(error)
         }
-        
+    }
+    func getUIColor() -> UIColor {
+        return UIColor(red: CGFloat(self.rgb.fraction.r), green: CGFloat(self.rgb.fraction.g), blue: CGFloat(self.rgb.fraction.b), alpha: 1)
     }
 }
 
-struct RBG: Codable {
+struct Name: Codable {
+    var value: String
+}
+
+struct Hex: Codable {
+    let value: String
+}
+
+struct RGB: Codable {
     let fraction: Fraction
 }
 struct Fraction: Codable {
